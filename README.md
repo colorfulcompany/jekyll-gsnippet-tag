@@ -1,6 +1,6 @@
 # Jekyll Gsnippet Tag
 
-Google Analytic gtag.js snippet tag for Jekyll.
+Google snippet for Jekyll.
 
 ## Installation
 
@@ -25,6 +25,7 @@ plugins: [jekyll-gsnippet-tag]
 
 ## Usage
 
+### Google Tag Manager
 ```bash
 $ bundle exec gsnippet tagmanager extract "https://tagassistant.google.com/#source=TAG_MANAGER&id=GTM-1234567&gtm_auth=xxx&gtm_preview=env-1"
 ✔️ Extract GTM parameters from the specified URL!
@@ -35,10 +36,10 @@ GTM_PREVIEW=env-1
 
 ```html
 <head>
-    <%= gtm_head_snippet %>
+    {% gtm_head_snippet %}
 </head>
 <body>
-    <%= gtm_body_snippet %>
+    {% gtm_body_snippet %}
 </body>
 <!-- ... -->
 ```
